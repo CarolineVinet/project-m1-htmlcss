@@ -1,1 +1,530 @@
-/* CSS here :) */
+@import url(cssreset.css);
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: poppins;
+}
+
+
+.navbar{
+    color: white;
+    background-color: rgb(43, 40, 40);
+    display: flex;
+    height:60px;
+    justify-content: space-between;
+    width:100%;
+    position: fixed;
+    z-index: 9;
+}
+
+
+.desktop-menu{
+ flex-direction: row;
+ padding:0px 10px;
+ width:55%;
+ height:100%;
+ 
+}
+
+.desktop-menu > ul {
+    height:inherit;
+    padding-top: 20px;;
+}
+
+.desktop-menu > ul > li{
+    height:100%;
+
+}
+
+.desktop-menu > ul > li >a:hover{
+text-decoration: underline;
+text-decoration-color: white;
+
+
+}
+.products:hover > .productlist{
+    display: block;
+    position: absolute;
+    top: 60px;
+
+
+}
+
+.productlist{
+    display: none;
+
+}
+
+.models{
+display: block;
+
+}
+
+
+.models >li:hover{
+    background-color: rgb(66, 65, 66);
+}
+
+.models > li {
+    color: white;
+    padding: 15px;
+    background-color: rgb(43, 40, 40);
+    
+}
+
+.mobile-dropdown{
+    display: none;
+    background-color: rgb(43, 40, 40);
+    color: white;
+    position: absolute;
+    top: 59px;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+
+}
+.mobile-dropdown > li {
+    list-style-type: none;
+    padding: 15px 0px; 
+}
+
+.mobile-menu:hover > .mobile-dropdown{
+    display: block;
+
+}
+
+.mobile-dropdown > li:hover{
+    background-color: rgb(66, 65, 65);
+}
+
+
+.mobile-menu{
+    width: 35px;
+
+}
+
+.mobile-menu > img {
+    padding-top: 18px;
+
+}
+
+
+
+
+.looplogo{
+    max-width: 50px;
+    max-height: 50px;
+    margin:5px 5px 5px 15px;
+}
+
+
+
+ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:100%;
+    height: 100%;
+    align-items: center;
+    
+    
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    align-items: center;
+
+}
+
+.something{
+    background-position: center;
+    background-size: cover;
+    background-image: url('../imgs/bg.jpg');
+
+}
+
+
+.rocketcontent{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height:1200px;
+}
+
+.biggest{
+    border: solid white 8px;
+    display: flex;
+    width:75%;
+}
+
+.left{
+    color: white;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2{
+    font-size:70px;
+    font-weight:bold;
+}
+
+.right{
+
+   background-color: rgb(49, 48, 48);
+   width:100%;
+   opacity: 0.6;
+   width: 60%;
+
+}
+
+.righttop{
+    color: white;
+    border-bottom: dotted white 2px;
+    margin: 0px 15px;
+    padding: 7.5px 0px 50px 0px;
+    
+
+}
+
+h3{
+    font-size: 48px;
+    font-weight:bold;
+    margin:40px 25px 0px 25px;
+}
+
+.rightbottom{
+    display: flex;
+    justify-content: space-between;
+    padding:20px 0px 50px 0px;
+    margin:0px 15px;
+}
+
+
+.rb{
+    font-size: 18px;
+    color: white;
+    margin: 0px;
+    padding: 20px 10px 0px 10px;
+    
+}
+
+.features{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+}
+
+.amazingfeats{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px 0px;
+    width: 70%;
+    margin: auto;
+    
+}
+.feature{
+    border: 2px solid rgb(230, 230, 228) ;
+    box-shadow: rgb(184, 182, 182) 0px 2px 1px ;
+    border-radius: 5px;
+    width:30%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    padding: 5px;
+    justify-content: space-between;
+    margin:0px 10px;
+
+}
+
+.icon{
+    height:40px;
+    width:40px;
+    padding: 15px 0px;
+
+}
+
+.feature > h4{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.feature > p {
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(153, 151, 151);
+    padding: 30px 0px;
+}
+
+.feature > button{
+    background-color: rgb(43, 40, 40); 
+    color: white;
+    width: 95%;
+}
+
+button:hover{
+    background-color: grey;
+}
+
+.greyblock{
+    background-color: rgb(43, 40, 40);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+    z-index: 0;
+
+}
+
+.cool{
+    color: white;
+    font-size: 70px;
+    line-height: 3;
+    width: 50%;
+    align-self: flex-start;
+    text-align: left;
+    padding-left: 50px;
+
+}
+
+.greyblock > p {
+    color: white;
+    font-size:30px ;
+    width:80%;
+    align-self:flex-start;
+    text-align: left;
+    padding-left: 60px;
+    padding-bottom: 60px;
+
+}
+
+.mini{
+    width: 15%;
+    border: solid white 5px;
+    background-color: rgb(43, 40, 40);
+    text-align: center;
+    position: relative;
+    top: 105px;
+    left: 45px;
+    padding: 20px;
+    z-index: 1;
+}
+
+.mini > h5{
+color: red;
+font-weight: bold;
+padding-bottom: 20px;
+}
+
+.mini > p{
+    color: white;
+    font-size: 12px;
+}
+
+.blueblock{
+    background: rgb(240,239,246);
+    background: linear-gradient(90deg, rgba(240,239,246,1) 15%, rgba(145,212,249,1) 48%, rgba(91,162,246,1) 70%);
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    padding: 70px 0px;
+    z-index: 0;
+}
+
+
+.slick{
+    color: white;
+    font-size: 70px;
+    line-height: 3;
+    width: 50%;
+    align-self: flex-end;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.blueblock > p {
+    color: white;
+    font-size:30px ;
+    width:50%;
+    align-self:flex-end;
+    text-align: right;
+    padding-right: 60px;
+    padding-bottom: 60px;
+}
+
+
+.gallery{
+    overflow: hidden;
+}
+
+.gridblock{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+overflow: hidden;
+
+}
+
+
+.column{
+    max-width: calc(100% / 3);
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+
+}
+
+.grid:hover{
+    transform: scale(1.1);
+    transition: .5s ease-in;
+    overflow: hidden;
+    z-index: 0;
+    
+}
+
+.grid{
+    width: 100%;
+    height:100%; 
+    overflow: hidden;
+    z-index: 1;
+  
+
+}
+
+.grid-container{
+    height:calc(100% / 2);
+    overflow: hidden;
+}
+
+.grid-container:hover > .caption{
+    display: block;
+}
+
+.caption{
+    display: none;
+    position: relative;
+    color: white;
+    top:-50%;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: rgb(46, 43, 43) 2px 2px;
+}
+
+#endofpage{
+    height: 600px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+
+}
+
+
+.lists{
+    border-top: rgb(206, 204, 204) solid 1px;
+    padding-top: 30px;
+    display:flex;
+    width:90%;
+    margin:auto;
+    line-height: 2.5;
+
+}
+
+.linklist{
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+    color: rgb(75, 72, 72);
+    width:100%;
+    
+}
+
+.input-section{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+
+
+.email-label{
+    margin: auto;
+
+}
+
+.email-input{
+    margin: auto;
+    padding: 5px;
+    display:flex;
+}
+
+.emailbox{
+    height: 24px;
+    border: grey solid 3px;
+    border-radius: 3px;
+}
+
+.sendlogo{
+    background-color: grey;
+    width:25px;
+    height:20px;
+    border-radius: 3px;
+    padding: 6px 10px;
+    margin-left: -3px;
+}
+
+.checkbox-input{
+    margin: auto;
+}
+
+
+@media(max-width:768px) {
+    .desktop-menu{
+        display: none;
+    }
+    .biggest{
+        display:block;
+    }
+    .right{
+        width:100%;
+    }
+    .left{
+        width:100%;
+    }
+    .amazingfeats{
+        display: block;
+    }
+    .feature{
+        margin: 0px 0px 25px 0px;
+        width:80%;
+    }
+    .cool{
+        line-height: 1.5;
+    }
+    .slick{
+        line-height: 1.5;
+    }
+    
+    .left >h2 {
+    font-size: 70px;
+    }
+}
+
+@media(min-width:769px){
+    .mobile-menu{
+        display: none;
+    }
+}
+
